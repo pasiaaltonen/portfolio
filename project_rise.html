@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Pasi Aaltonen Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="styles/navcss.css">
+        <link rel="stylesheet" href="styles/project_site.css">
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>    
+        <!-- Nav start -->
+        <header>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+                <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">{<strong><span>P</span>ASI</strong> <span>A</span>ALTONEN}</label>
+              <ul id="menu">
+                <li><a href="index.html#hero" onclick="uncheck()">Home</a></li>
+                <li><a href="index.html#about" onclick="uncheck()">About</a></li>
+                <li><a href="index.html#skills" onclick="uncheck()">Skills</a></li>
+                <li><a href="index.html#projects" onclick="uncheck()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="uncheck()">Contact</a></li>
+              </ul>
+            </nav>
+            <script> 
+                /*Closes Mobile menu onclick*/                      
+                function uncheck() {
+                  document.getElementById("check").checked = false;
+                }
+            </script>
+        </header><!-- Nav end -->     
+        <main>
+            <section class="container">
+                <div class="content">
+                    <!-- Description of project -->
+                    <article class="left-side">
+                        <div class="info">                        
+                        <h1>Rise <span>from</span> Valhalla</h1>
+                        <p>Rise from Valhalla is a top down wave based shooter game where player controls a Viking shooting undead enemies. Here a nameless Viking has fallen in battle and made a deal with ancient gods that his family would be safe and live long lives. As he has accended to Valhalla he relizes that there has been a betrayal and an ancient demon has taken over Valhalla. Our Vikings only choise is to battle out his out of Valhalla by defeating the demon to save his family.</p> <br>
+                        <p>Game is in 2D top down view. All graphics have been hand painted. Currenntly there are 3 types of weapons that are droppend by enemies which player can use. Each weapon deal different amount of damage and has a different speed the ammunition moves. Goal is to defeat 10 waves of enemies with increasing difficulty to reach to the boss fight.</p>
+                        </div>
+                        <div class="button">
+                            <a href="index.html#projects">Back to projects</a>
+                        </div>
+                    </article>  
+                    <!-- Image Gallery -->
+                    <aside class="right-side">
+                        <div class="row">
+                          <div class="column">
+                              <a href="images/viking/Viking1.PNG" data-lightbox="mygames" data-title="Rise from Valhalla"><img src="images/viking/Viking1.PNG"/></a>
+                              <a href="images/viking/Viking2.PNG" data-lightbox="mygames" data-title="Rise from Valhalla"><img src="images/viking/Viking2.PNG"/></a>
+                              <a href="images/viking/Viking3.PNG" data-lightbox="mygames" data-title="Rise from Valhalla"><img src="images/viking/Viking3.PNG"/></a>                              
+                          </div>
+                          <div class="column">
+                              <a href="images/viking/Viking4.PNG" data-lightbox="mygames" data-title="Rise from Valhalla"><img src="images/viking/Viking4.PNG"/></a>
+                              <a href="images/vikingMain.PNG" data-lightbox="mygames" data-title="Rise from Valhalla"><img src="images/vikingMain.PNG"/></a>
+                          </div>                          
+                        </div>
+                        <script src="js/lightbox-plus-jquery.js"></script>
+                    </aside>
+                </div>
+            </section>        
+        </main>
+    </body>
+</html>

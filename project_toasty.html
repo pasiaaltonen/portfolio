@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Pasi Aaltonen Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="styles/navcss.css">
+        <link rel="stylesheet" href="styles/project_site.css">
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>    
+        <!-- Nav start -->
+        <header>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+                <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">{<strong><span>P</span>ASI</strong> <span>A</span>ALTONEN}</label>
+              <ul id="menu">
+                <li><a href="index.html#hero" onclick="uncheck()">Home</a></li>
+                <li><a href="index.html#about" onclick="uncheck()">About</a></li>
+                <li><a href="index.html#skills" onclick="uncheck()">Skills</a></li>
+                <li><a href="index.html#projects" onclick="uncheck()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="uncheck()">Contact</a></li>
+              </ul>
+            </nav>
+            <script> 
+                /*Closes Mobile menu onclick*/                      
+                function uncheck() {
+                  document.getElementById("check").checked = false;
+                }
+            </script>
+        </header><!-- Nav end -->     
+        <main>
+            <section class="container">
+                <div class="content">
+                    <!-- Description of project -->
+                    <article class="left-side">
+                        <div class="info">                        
+                        <h1>Toasty <span>the</span> polite <span>toaster</span></h1>
+                        <p>Toasty the polite toaster is a point n' click adventure game set in to a postapocalyptic near future. Game demo is completely made with Unity Fungus add-on. In the game player controls a super AI who’s been trapped inside a toaster for two enturies building hatred towards humanity the whole time. At the beginning player is not able to move or speak by itself but has to influence the NPC's in the game to your bidding. Goal for the game is to upgrade the prison that is your body so the AI character would be able to speak and move and enslave all humanity for your pleasure.</p> <br>
+                        <p>Games atmosphere is cartoonish and dark as the game is not suited for younger audience. Humor and dialogue contains a lot of dark humor and insulting language usage. Basic concept idea is that this game is a sort of prologue to novel I have no mouth but I must scream.</p>
+                        </div>
+                        <div class="button">
+                            <a href="index.html#projects">Back to projects</a>
+                        </div>
+                    </article> 
+                    <!-- Image Gallery -->
+                    <aside class="right-side">
+                        <div class="row">
+                          <div class="column">
+                              <a href="images/ToastyMain.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/ToastyMain.PNG"/></a>
+                              <a href="images/Toasty/Toasty2.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty2.PNG"/></a>
+                              <a href="images/Toasty1.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty1.PNG"/></a>
+                              <a href="images/Toasty/Toasty3.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty3.PNG"/></a>
+                          </div>
+                          <div class="column">
+                              <a href="images/Toasty/Toasty4.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty4.PNG"/></a>
+                              <a href="images/Toasty/Toasty5.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty5.PNG"/></a>
+                              <a href="images/Toasty/Toasty6.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty6.PNG"/></a>
+                              <a href="images/Toasty/Toasty7.PNG" data-lightbox="mygames" data-title="Toasty the Polite Toaster"><img src="images/Toasty/Toasty7.PNG"/></a>
+                          </div>                          
+                        </div>
+                        <script src="js/lightbox-plus-jquery.js"></script>
+                    </aside>
+                </div>
+            </section>        
+        </main>
+    </body>
+</html>

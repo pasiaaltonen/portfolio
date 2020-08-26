@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Pasi Aaltonen Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="styles/navcss.css">
+        <link rel="stylesheet" href="styles/project_site.css">
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>    
+        <!-- Nav start -->
+        <header>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+                <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">{<strong><span>P</span>ASI</strong> <span>A</span>ALTONEN}</label>
+              <ul id="menu">
+                <li><a href="index.html#hero" onclick="uncheck()">Home</a></li>
+                <li><a href="index.html#about" onclick="uncheck()">About</a></li>
+                <li><a href="index.html#skills" onclick="uncheck()">Skills</a></li>
+                <li><a href="index.html#projects" onclick="uncheck()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="uncheck()">Contact</a></li>
+              </ul>
+            </nav>
+            <script> 
+                /*Closes Mobile menu onclick*/                      
+                function uncheck() {
+                  document.getElementById("check").checked = false;
+                }
+            </script>
+        </header><!-- Nav end -->     
+        <main>
+            <section class="container">
+                <div class="content">
+                    <!-- Description of project -->
+                    <article class="left-side">
+                        <div class="info">                        
+                        <h1>Break-Fast <span>Derby</span></h1>
+                        <p>Break-Fast derby is a miniature car racing game where player competes AI cars in various different settings. Currently the prototype has five different race tracks for singleplayer experience and two tracks for splitscreen multiplayer. </p> <br>
+                        <p>Game is in 3D with slightly angled top down view. Tack themes consists of dinner table, sandbox, miniature forrest setting, snooker table and a warehouse setting. Each track is slightly different from another. For multiplayer there are dinner table track and sandbox track available. Current version contains only quick races with one available car. So, other drivable cars are not available.</p>
+                        </div>
+                        <div class="button">
+                            <a href="index.html#projects">Back to projects</a>
+                        </div>
+                    </article> 
+                    <!-- Image Gallery -->
+                    <aside class="right-side">
+                        <div class="row">
+                          <div class="column">
+                              <a href="images/BreakFast/break1.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break1.PNG"/></a>
+                              <a href="images/BreakFast/break2.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break2.PNG"/></a>
+                              <a href="images/BreakFast/break4.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break4.PNG"/></a>
+                          </div>
+                          <div class="column">
+                              <a href="images/BreakFast/break5.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break5.PNG"/></a>
+                              <a href="images/BreakFast/break6.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break6.PNG"/></a>
+                              <a href="images/BreakFast/break7.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break7.PNG"/></a>
+                              <a href="images/BreakFast/break8.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/BreakFast/break8.PNG"/></a>
+                          </div>                          
+                        </div>
+                        <script src="js/lightbox-plus-jquery.js"></script>
+                    </aside>
+                </div>
+            </section>        
+        </main>
+    </body>
+</html>

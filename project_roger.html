@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Pasi Aaltonen Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="styles/navcss.css">
+        <link rel="stylesheet" href="styles/project_site.css">
+        <link href="css/lightbox.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>    
+        <!-- Nav start -->
+        <header>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+                <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">{<strong><span>P</span>ASI</strong> <span>A</span>ALTONEN}</label>
+              <ul id="menu">
+                <li><a href="index.html#hero" onclick="uncheck()">Home</a></li>
+                <li><a href="index.html#about" onclick="uncheck()">About</a></li>
+                <li><a href="index.html#skills" onclick="uncheck()">Skills</a></li>
+                <li><a href="index.html#projects" onclick="uncheck()">Projects</a></li>
+                <li><a href="index.html#contact" onclick="uncheck()">Contact</a></li>
+              </ul>
+            </nav>
+            <script> 
+                /*Closes Mobile menu onclick*/                      
+                function uncheck() {
+                  document.getElementById("check").checked = false;
+                }
+            </script>
+        </header><!-- Nav end -->     
+        <main>
+            <section class="container">
+                <div class="content">
+                    <!-- Description of project -->
+                    <article class="left-side">
+                        <div class="info">                        
+                        <h1><span>Roger</span> Powers <br> the <span>Space</span> Ranger</h1>                   
+                        <p>You are Captain Roger Powers the last remaining space ranger in the intergalactic war agains a dark warlord. Your objective in the game is to reach to the end of the level where the dark warlord awaits to encounter you in a final battle for the faith of the qalaxy.<br><br>Objective is to reach the end of the level and beat the high score. You score points by killing enemies. Different enemies gives you different amount of points.</p><br>
+                        <p>Game is in 2.5D top down view space shooter. Enemies fly towards the player from the top of the screen.</p>
+                        </div>
+                        <div class="button">
+                            <a href="index.html#projects">Back to projects</a>
+                        </div>
+                    </article>
+                    <!-- Image Gallery -->
+                    <aside class="right-side">
+                        <div class="row">
+                          <div class="column">
+                              <a href="images/Roger/rogerMenu.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/rogerMenu.PNG"/></a>
+                              <a href="images/Roger/roger2.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger2.PNG"/></a>
+                              <a href="images/Roger/roger3.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger3.PNG"/></a>
+                              <a href="images/Roger/roger4.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger4.PNG"/></a>
+                          </div>
+                          <div class="column">
+                              <a href="images/Roger/roger5.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger5.PNG"/></a>
+                              <a href="images/Roger/roger6.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger6.PNG"/></a>
+                              <a href="images/Roger/roger7.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger7.PNG"/></a>
+                              <a href="images/Roger/roger8.PNG" data-lightbox="mygames" data-title="Roger Powers"><img src="images/Roger/roger8.PNG"/></a>
+                          </div>                          
+                        </div>
+                        <script src="js/lightbox-plus-jquery.js"></script>
+                    </aside>
+                </div>
+            </section>        
+        </main>
+    </body>
+</html>

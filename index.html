@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>        
+        <title>Pasi Aaltonen Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Portfolio">
+        <meta name="keywords" content="game, development, web, design">
+        <meta name="author" content="Pasi Aaltonen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/layout.css">
+        <link rel="stylesheet" href="styles/navcss.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>    
+        <!-- Nav start -->
+        <header>
+            <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+                <i class="fas fa-bars"></i>
+              </label>
+              <label class="logo">{<strong><span>P</span>ASI</strong> <span>A</span>ALTONEN}</label>
+              <ul id="menu">
+                <li><a href="#hero" onclick="uncheck()">Home</a></li>
+                <li><a href="#about" onclick="uncheck()">About</a></li>
+                <li><a href="#skills" onclick="uncheck()">Skills</a></li>
+                <li><a href="#projects" onclick="uncheck()">Projects</a></li>
+                <li><a href="#contact" onclick="uncheck()">Contact</a></li>
+              </ul>
+            </nav>
+            <script> 
+                /*Closes Mobile menu onclick*/                      
+                function uncheck() {
+                  document.getElementById("check").checked = false;
+                }
+            </script>            
+        </header><!-- Nav end -->     
+        <!-- Hero start -->
+        <section id="hero">
+            <div class="hero container">
+                <div class="fadein">
+                    <h1 class="moveLeft">{<strong><span>P</span>ASI</strong></h1>
+                    <h1 class="moveRight"><span>A</span>ALTONEN}</h1>
+                    <p class="fadeinDelay">ICT Engineering student <br> Game and Interactive technology</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hero end -->
+        <!-- About start -->        
+        <section id="about">
+            <div class="about container">                
+                <article class="about-box">
+                    <div class="about-left-side">
+                        <img id="MyPicture" src="images/cartoon1597731006443.jpg" alt="My Picture">
+                        <h2>Follow me:</h2>
+                        <div class="about-some">
+                            <a href="https://www.linkedin.com/in/pasi-aaltonen-46773a1b3/" target="_blank"><img src="images/linkedin.png"></a>
+                            <a href="https://itch.io/profile/frozen-ember-production" target="_blank"><img style="width: 160px;" src="images/Itch.io_logo.svg"></a>
+                        </div>
+                    </div>                    
+                    <div class="about-content">
+                        <header class="about-title">
+                            <h1>About <span>Me</span></h1>
+                            <br>
+                            <h4>Hi, I’m Pasi a third year game developer student living in Kaarina Finland. </h4>
+                        </header>
+                            <article class="about-text">
+                                <p>I’m Currently studying information and communication technology batchelor's degree in Game and Interactive technology at Turku University of Applied sciences. My secret passion has always been video games and games in general but I have just recently started to make a career out of it. Making games is hard but rewarding and extremely fun. <br><br> Still my work history lies on business side as in the past ten years I’ve been working as accountant and after few years I moved to IT as a software tester. From here my passion to learn how all these applications that I have been using, games I have been playing actually work. So, here I am today feeling like a middle-aged teenager learning game design and programming and pushing my self to make a career out of something that before I never thought possible. <br><br> While not learning new skills on game development I spend time with music. Music has been the other mistress in my life as in listening and playing. As in games, music is all about touching people on the inside.</p>
+                            </article>  
+                        <!-- Download my resume with button that calls the download link -->
+                        <button onclick="document.getElementById('link').click()">Download resume</button>
+                        <a id="link" href="dlfiles/Resume.pdf" download hidden target="_blank"></a>
+                    </div>                        
+                </article>                           
+            </div>          
+        </section>
+        <!-- About END -->
+        <!-- Skills start -->        
+        <section id="skills">
+            <article class="skills container">
+                <header class="skills-title">
+                    <h1 >My <span>Skills</span></h1>
+                </header>
+                <div class="skills-container">
+                    <div class="mySkill">
+                        <div class="topic">
+                            <h2>Development</h2>
+                        </div>
+                    </div>
+                    <div class="mySkillBottom">
+                        <div class="skills-text">
+                             <table>                              
+                              <tr>
+                                <td>- Game design</td>
+                                <td>- C#</td>                                
+                              </tr>
+                              <tr>
+                                <td>- Web design</td>
+                                <td>- Java</td>                                
+                             </tr>
+                             <tr>
+                                <td>- Programming</td>
+                                <td>- Python</td>                                
+                             </tr>
+                             <tr>
+                                <td>- Application Testing</td>
+                                <td>- HTML</td>                                
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td>- CSS</td>                                
+                             </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <div class="mySkill">
+                        <div class="topic">
+                            <h2>Tools</h2>
+                        </div>
+                    </div>
+                    <div class="mySkillBottom">
+                        <div class="skills-text">
+                             <table>                              
+                              <tr>
+                                <th>Game development</th>
+                                <th>Web development</th>                                
+                              </tr>
+                              <tr>
+                                <td>- Unity</td>
+                                <td>- Brackets</td>                                
+                             </tr>
+                             <tr>
+                                <td>- SourceTree</td>
+                                <td>- Google</td>                                
+                             </tr>
+                             <tr>
+                                <td>- Visual Studio 2017</td>
+                                <td></td>                                
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>                                
+                             </tr>
+                            </table> 
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- Skills END -->
+        <!-- Projects start -->
+        <section id="projects">
+            <article class="projects container">
+                <header class="project-header">
+                    <h1 class="project-title"><span>Pro</span>jects</h1>                    
+                </header>
+                <div class="project-text">
+                    <br>
+                    <p>Here are my recent game projects made using <span><strong>Unity</strong></span> game engine.</p>
+                </div>                
+                <div class="box-container">  
+                <!-- Project 1 -->
+                  <div class="box">                       
+                    <div class="imgBx">
+                      <img src="images/rogerMenu.PNG" alt="Roger Powers">
+                    </div>
+                    <div class="content">
+                      <h3>Roger Powers</h3>              
+                      <p>Roger Powers is a 2.5D top down space shooter where the player controls a space ship battling up coming enemy ships.<br><br> Goal for this mini game is to win the end boss who is an evil warlord trying to conquer the qalaxy.</p>
+                        <div class="content-bottom">
+                            <a href="project_roger.html" class="button">Read More!</a>
+                        </div>            
+                    </div>
+                  </div>
+                    <!-- Project 2 --> 
+                  <div class="box">     
+                    <div class="imgBx">
+                      <img src="images/vikingMain.PNG" alt="Rise from Valhalla">
+                    </div>
+                    <div class="content">
+                        <div class="content-top">
+                              <h3>Rise from Valhalla</h3>
+                              <p>Wrongfully killed Viking send to a purgatory battles through waves of enemies to escape Valhalla to be reunited with his family. <br><br>Rise from Valhalla is a 2D top down shooter where player battles agaist waves of enemies to finally have a last stand with the demon taken over Valhalla.</p>
+                        </div>
+                        <div class="content-bottom">
+                            <a href="project_rise.html" class="button">Read More!</a>
+                          <!-- <button class="button">Read More!</button>   -->                                 
+                        </div>
+                    </div>
+                    
+                  </div>
+                    <!-- Project 3 --> 
+                  <div class="box">     
+                    <div class="imgBx">
+                      <img src="images/breakMenu.PNG" alt="Break-Fast Derby">
+                    </div>
+                    <div class="content">
+                      <h3>Break-Fast Derby</h3>
+                      <p>This 3D miniature car racing game is suitable entertainment for the whole family.<br><br>There are 5 tracks to compete agains AI cars and 2 tracks to race against friends and family with split sccreen multiplayer.</p>
+                        <div class="content-bottom">
+                            <a href="project_break.html" class="button">Read More!</a>
+                          <!-- <button class="button">Read More!</button>   -->                                 
+                        </div>
+                    </div>
+                  </div>
+                    <!-- Project 4 -->
+                    <div class="box">        
+                    <div class="imgBx">
+                      <img src="images/ToastyMain.PNG" alt="Toasty">
+                    </div>
+                    <div class="content">
+                      <h3>Toasty</h3>                
+                      <p>Toasty is a point n' click adventure demo made using Unity plugin Fungus.<br><br> You are a super AI being trappend inside a toaster for centuries. Now freed from oblivion you are eager to destroy all humanity</p>
+                        <div class="content-bottom">
+                            <a href="project_toasty.html" class="button">Read More!</a> 
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </article>
+        </section>
+        <!-- Projects END -->
+        <!---Contact start -->
+        <section id="contact">             
+            <article class="contact container">
+                <header>
+                    <h1 class="contact-title" ><span>Contact</span> me</h1>
+                </header>
+                <div class="contact-text">
+                    <p>If you have a project in mind, want to hire me or just to say hello. Send me a message.</p>
+                </div>
+                <div class="contact-items">
+                    <a href="tel:+358501234567"> <!-- Link to open phone app --> 
+                        <div class="contact-item">
+                            <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/phone-message.png" alt="Phone picture"></div> <!-- icons are from icons8.com -->
+                            <div class="contact-info">
+                                <h2>Phone</h2>
+                                <h3>+358 50 533 3883</h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="mailto:pasi.aaltonen@edu.turkuamk.fi"> <!-- Link to open email app -->
+                        <div class="contact-item">                        
+                                <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/send-mass-email.png" alt="Email picture"></div>
+                                <div class="contact-info">
+                                    <h2>Email</h2>
+                                    <h3>pasi.aaltonen@edu.turkuamk.fi</h3>
+                                </div>                        
+                        </div>
+                    </a>
+                    <!-- Link to open google maps location -->
+                    <a href="https://www.google.com/maps/place/Kaarina/@60.4106366,22.3385561,13z/data=!3m1!4b1!4m5!3m4!1s0x468c705eee697b41:0xca912cf10c4ac63f!8m2!3d60.4095118!4d22.3841265" target="_blank">
+                        <div class="contact-item">                        
+                                <div class="icon"><img src="https://img.icons8.com/ios-filled/50/000000/address.png" alt="Location picture"></div>
+                                <div class="contact-info">
+                                    <h2>Location</h2>
+                                    <h3>Kaarina, Finland</h3>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <!-- Footer start -->
+        <footer>
+            Copyright © 2020 Pasi Aaltonen
+        </footer><!-- Footer end -->        
+    </body>
+</html>
